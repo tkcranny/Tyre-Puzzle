@@ -2,7 +2,7 @@ from pathlib import Path
 
 import networkx as nx
 
-from .data import r, b, g
+from .helpers import r, b, g
 from .types import Puzzle, PlainGraph
 
 

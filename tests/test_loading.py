@@ -1,6 +1,4 @@
 from itertools import product
-from pathlib import Path
-from textwrap import dedent
 
 import networkx as nx
 import pytest

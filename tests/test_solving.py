@@ -1,4 +1,4 @@
-from tyred.data import b, g, r
+from tyred.helpers import b, g, r
 from tyred.solving import find_color_path, find_path
 
 
