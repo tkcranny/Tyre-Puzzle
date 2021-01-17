@@ -6,9 +6,8 @@ authors = ["Thomas Cranny <tkcranny@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-ipython = "^7.19.0"
-jupyterlab = "^3.0.0"
 networkx = "^2.5"
+click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.790"
