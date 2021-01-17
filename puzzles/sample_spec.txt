@@ -1,0 +1,2 @@
+A B red
+B C blue
