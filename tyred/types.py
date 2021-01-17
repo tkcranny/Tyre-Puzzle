@@ -1,6 +1,14 @@
-from typing import Tuple
+from enum import Enum
+from typing import List, Tuple, NewType
 
-red, green, blue = "r", "g", "b"
+import networkx as nx
 
-Node = Tuple[int, int]
-ColorNode = Tuple[int, int, str]
+
+PlainGraph = NewType("PlainGraph", nx.DiGraph)  # type: ignore
+Puzzle = NewType("TripleGraph", nx.DiGraph)  # type: ignore
+
+
+Node = str
+ColorNode = Tuple[str, str]
+PrettyNode = Tuple[str, str]
+Solution = List[PrettyNode]
