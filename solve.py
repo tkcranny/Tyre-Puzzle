@@ -22,11 +22,13 @@ def main(spec, start: str, goal: str) -> None:
         solution = find_path(puzzle, start=start, goal=goal)
     except NoSolutionError:
         raise click.ClickException(f"No solution between {start} and {goal} possible")
-    click.echo(f"Solution found with {len(solution)} steps")
     print_solution(solution)
 
 
 def print_solution(solution: Solution) -> None:
+    click.secho(
+        f"Solution found! Contains {len(solution)} steps", bold=True, fg="green"
+    )
     click.secho(solution[0][0], nl=False)
     for node, color in solution[1:]:
         click.secho("➜", fg=color, nl=False)
